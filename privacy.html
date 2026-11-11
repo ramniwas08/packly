@@ -17,6 +17,7 @@
 <tr><td>Inventory and locations (read and write)</td><td>Setting the starting stock of a new colour at the location you choose.</td></tr>
 <tr><td>Files (read and write)</td><td>Attaching the photos you choose to a pack, and saving the backup file you ask for in your store's Files.</td></tr>
 <tr><td>Publications (read and write)</td><td>Making your pack and colour products visible on your Online Store.</td></tr>
+<tr><td>Orders (read)</td><td>Showing, on the order page in your admin, which packs an order contained and the items each was split into. Only the line items of the order you are looking at are read; nothing is stored.</td></tr>
 <tr><td>Online Store themes (read)</td><td>Checking whether Packly has been switched on in your theme, so the app can tell you if it has not.</td></tr>
 <tr><td>Cart transforms and validations (read and write)</td><td>Splitting a pack into its items at checkout, and refusing a pack that does not hold the right items.</td></tr>
 </table>
@@ -26,7 +27,7 @@
 <p>If you choose "Download backup" in Packly, a file with these settings is saved in your store's Files. It stays in your store until you delete it. Packly does not send it anywhere.</p>
 
 <h2>Customer data</h2>
-<p>Packly does not read, receive or store customer names, email addresses, addresses or payment details, and it does not read your orders.</p>
+<p>Packly does not read, receive or store customer names, email addresses, addresses or payment details. On an order page it reads only the order's line items (which packs and items were bought), in your admin, and keeps nothing.</p>
 <p>Its checkout logic runs as Shopify Functions, which by design cannot reach the network: they receive the cart, decide how to split a pack, and return. Nothing leaves Shopify.</p>
 <p>When a pack is added to the cart, Packly writes what is in it onto the cart line, for example "2 &times; Black, M &middot; 1 &times; White, L", so you and the shopper can both see it. That is part of the order and is held by Shopify.</p>
 

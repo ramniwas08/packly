@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Packly – Support</title><meta name="description" content="Setup guide and answers for the Packly Shopify app."><link rel="stylesheet" href="style.css"></head>
+<body><header><a class="brand" href="index.html">Packly</a><nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></header>
+<main>
+<h1>Support</h1>
+<p class="meta">Email <a href="mailto:ramniwassharan902@gmail.com">ramniwassharan902@gmail.com</a>. Typical reply: within 2 business days.</p>
+<div class="card">Please include your store's <code>.myshopify.com</code> address and, if a pack behaves oddly, a link to the product.</div>
+
+<h2>Setting up</h2>
+<ol>
+<li>Open Packly from your Shopify admin. Packly switches on its checkout functions by itself.</li>
+<li>Create a <strong>style</strong> (one product line, for example "1810 Tee") with its sizes.</li>
+<li>Add its <strong>colours</strong> in one table. Packly creates one product per colour, in every size.</li>
+<li>Make <strong>packs</strong>: ready-made (you choose the colours) or Build your own (the shopper chooses).</li>
+<li>Open the <strong>Set-up</strong> tab and press "Turn on in the theme editor", then Save. This is one switch in your theme (App embeds &rarr; Packly). Shopify requires you to turn an app's storefront part on yourself.</li>
+</ol>
+
+<h2>Common questions</h2>
+<details><summary>The pack choices or builder do not appear on the product page.</summary><p>Check that the Packly app embed is on in your theme (Set-up tab shows "On" when it is), and that the pack product belongs to a style in Packly. If it is on and the builder lands in the wrong place, set "Where to place the builder" in the app embed settings to a CSS selector of your product page.</p></details>
+<details><summary>How do I change the colours or shape of the buttons?</summary><p>In the theme editor open App embeds &rarr; Packly &rarr; Look: accent colour, corner roundness, colour circle size, pack photo width and text size. For anything further there is a Custom CSS box in the same place. Builder parts can be styled like this: <code>packly-builder::part(slot) { border-radius: 0; }</code>. Parts: slot, choice, dot, primary, ghost, title, count, sheet, note.</p></details>
+<details><summary>Pack details show against the wrong cart line, or twice.</summary><p>Set "Cart row selector" in the Packly app embed settings to match your theme's cart row, or turn off "Replace the theme's plain list of the pack's items". Email us the theme name and we will tell you what to use.</p></details>
+<details><summary>Checkout says a pack cannot be bought.</summary><p>The pack holds the wrong number of items, or an item it is not allowed to hold. This is deliberate: the alternative is selling a pack price for contents you did not intend. Rebuild the pack.</p></details>
+<details><summary>A pack was ordered but the items did not come off stock.</summary><p>The checkout functions were not on. Open Packly and check the Set-up tab; orders placed before that need their stock adjusted by hand.</p></details>
+<details><summary>"Fix links" appears in the app.</summary><p>Some products are not yet linked to each other or to the list a Build-your-own pack uses. Press "Fix links"; it rewrites the links and nothing else.</p></details>
+
+<h2>Backup, uninstalling and removing your data</h2>
+<p>Set-up &rarr; Your data lets you save a backup file in your store's Files, restore from it, or remove everything Packly made. Uninstalling does not delete your colour and pack products. Shopify keeps Packly's settings for a limited time and restores them if you reinstall, but does not promise how long, so keep a backup before you uninstall.</p>
+</main>
+<footer>Packly is published by Ramniwas Saharan. Contact: <a href="mailto:ramniwassharan902@gmail.com">ramniwassharan902@gmail.com</a></footer></body></html>

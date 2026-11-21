@@ -53,7 +53,10 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); background: var(--t
 .hero { padding: 72px 0 40px; position: relative; overflow: hidden; isolation: isolate; }
 .hero::before { content: ""; position: absolute; inset: -20% -10% auto auto; width: 620px; height: 620px; background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 38%, transparent), transparent); z-index: -1; }
 .hero::after { content: ""; position: absolute; inset: auto auto -30% -10%; width: 560px; height: 560px; background: radial-gradient(closest-side, color-mix(in srgb, var(--brand-2) 26%, transparent), transparent); z-index: -1; }
-.hero-grid { display: grid; grid-template-columns: 1.02fr 1fr; gap: 48px; align-items: center; }
+.hero-grid { display: grid; grid-template-columns: 1fr; gap: 44px; justify-items: center; text-align: center; }
+.hero-grid .lead { margin-inline: auto; }
+.hero-grid .cta-row { justify-content: center; }
+.hero-grid .frame { width: 100%; max-width: 1080px; }
 .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: var(--tint); color: var(--brand); font-weight: 700; font-size: .85rem; letter-spacing: .02em; }
 h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.07; letter-spacing: -.03em; margin: 18px 0 18px; font-weight: 800; }
 h1 em { font-style: normal; background: linear-gradient(180deg, transparent 62%, color-mix(in srgb, var(--accent) 55%, transparent) 62%); }
@@ -127,7 +130,7 @@ table { width: 100%; border-collapse: collapse; margin: 18px 0; background: var(
 th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-soft); }
 th { background: var(--tint); color: var(--ink); font-size: .9rem; }
 tr:last-child td { border-bottom: 0; }
-.contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+.contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0; }
 .contact-grid a { display: block; text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; color: var(--ink); transition: transform .15s ease, box-shadow .15s ease; }
 .contact-grid a:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 .contact-grid strong { font-size: .95rem; }

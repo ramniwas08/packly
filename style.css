@@ -2,26 +2,26 @@
    One file for every page. System fonts only (no web-font request), subtle motion that stops
    for people who ask for less of it. */
 :root {
-  --bg: #fbf9f6;
+  --bg: #fafafa;
   --surface: #ffffff;
-  --ink: #1b1f3b;
-  --ink-soft: #4b5074;
-  --line: #e7e3dc;
-  --accent: #f2a93b;
-  --brand: #26305e;
-  --brand-2: #3a4790;
+  --ink: #111111;
+  --ink-soft: #555555;
+  --line: #e4e4e4;
+  --accent: #9a9a9a;
+  --brand: #111111;
+  --brand-2: #333333;
   --on-brand: #ffffff;
-  --tint: #f1edff;
-  --ok: #1c7c4f;
+  --tint: #f0f0f0;
+  --ok: #111111;
   --radius: 18px;
-  --shadow: 0 1px 2px rgba(27, 31, 59, .06), 0 12px 32px -12px rgba(27, 31, 59, .18);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 12px 32px -12px rgba(0, 0, 0, .2);
   --max: 1120px;
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #111428; --surface: #181c37; --ink: #f2f3fb; --ink-soft: #b4b9d8; --line: #2a2f55;
-    --tint: #1d2147; --brand: #aab4ff; --brand-2: #c9d0ff; --on-brand: #11142a;
+    --bg: #0d0d0d; --surface: #161616; --ink: #f5f5f5; --ink-soft: #b0b0b0; --line: #2a2a2a;
+    --tint: #1f1f1f; --brand: #f5f5f5; --brand-2: #d6d6d6; --on-brand: #0d0d0d; --accent: #777777;
     --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px -12px rgba(0, 0, 0, .6);
   }
 }
@@ -106,10 +106,10 @@ summary::after { content: "+"; font-size: 1.4rem; line-height: 1; color: var(--b
 details[open] summary::after { transform: rotate(45deg); }
 details p { color: var(--ink-soft); margin: 0 0 16px; }
 
-.cta-band { background: linear-gradient(135deg, #26305e, #3a4790); color: #fff; border-radius: 28px; padding: 56px 40px; text-align: center; }
+.cta-band { background: linear-gradient(135deg, #111111, #3a3a3a); color: #fff; border-radius: 28px; padding: 56px 40px; text-align: center; }
 .cta-band h2 { color: #fff; }
-.cta-band p { color: #dfe2ff; max-width: 34em; margin: 0 auto 26px; }
-.cta-band .btn-primary { background: var(--accent); color: #2b1c00; box-shadow: none; }
+.cta-band p { color: #d6d6d6; max-width: 34em; margin: 0 auto 26px; }
+.cta-band .btn-primary { background: #ffffff; color: #111111; box-shadow: none; }
 .cta-band .btn-ghost { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .45); }
 
 .doc { padding: 56px 0 24px; }

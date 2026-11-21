@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Packly app icon: an open box with three different-coloured items in its slots, the one thing
+  Packly does that a fixed bundle does not.
+
+  Shopify's rules: 1200x1200, PNG or JPEG, no text, no screenshots, no Shopify marks, corners are
+  rounded for you so the artwork is a plain full-bleed square.
+  Convert with:  qlmanage -t -s 1200 -o . icon.svg   (then rename icon.svg.png to icon.png)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2B3A67"/>
+      <stop offset="1" stop-color="#141C3A"/>
+    </linearGradient>
+    <linearGradient id="boxFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F1E5"/>
+      <stop offset="1" stop-color="#E4D9C3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+
+  <!-- the three items, standing in the box -->
+  <rect x="292" y="330" width="190" height="400" rx="52" fill="#E8683A"/>
+  <rect x="505" y="262" width="190" height="468" rx="52" fill="#3FA37F"/>
+  <rect x="718" y="330" width="190" height="400" rx="52" fill="#F2B632"/>
+
+  <!-- light highlight on each item -->
+  <rect x="318" y="356" width="36" height="150" rx="18" fill="#ffffff" opacity="0.28"/>
+  <rect x="531" y="288" width="36" height="190" rx="18" fill="#ffffff" opacity="0.28"/>
+  <rect x="744" y="356" width="36" height="150" rx="18" fill="#ffffff" opacity="0.28"/>
+
+  <!-- the box front, hiding the lower part of the items -->
+  <path d="M232 612 H968 a30 30 0 0 1 30 30 V884 a64 64 0 0 1 -64 64 H266 a64 64 0 0 1 -64 -64 V642 a30 30 0 0 1 30 -30 Z" fill="url(#boxFront)"/>
+  <!-- the rim -->
+  <rect x="196" y="590" width="808" height="54" rx="27" fill="#FFFFFF"/>
+  <!-- slot dividers on the front -->
+  <rect x="496" y="690" width="10" height="210" rx="5" fill="#CDBF9F"/>
+  <rect x="694" y="690" width="10" height="210" rx="5" fill="#CDBF9F"/>
+</svg>

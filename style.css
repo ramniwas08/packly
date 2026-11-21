@@ -1,9 +1,10 @@
 /* Packly site — clean, light, modern. Warm off-white, deep indigo ink, one amber accent.
+   Always light (white background), whatever the visitor's system setting.
    One file for every page. System fonts only (no web-font request), subtle motion that stops
    for people who ask for less of it. */
 :root {
-  --bg: #fafafa;
-  --surface: #ffffff;
+  --bg: #ffffff;
+  --surface: #f7f7f7;
   --ink: #111111;
   --ink-soft: #555555;
   --line: #e4e4e4;
@@ -16,14 +17,8 @@
   --radius: 18px;
   --shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 12px 32px -12px rgba(0, 0, 0, .2);
   --max: 1120px;
+  color-scheme: light;
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0d0d0d; --surface: #161616; --ink: #f5f5f5; --ink-soft: #b0b0b0; --line: #2a2a2a;
-    --tint: #1f1f1f; --brand: #f5f5f5; --brand-2: #d6d6d6; --on-brand: #0d0d0d; --accent: #777777;
-    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px -12px rgba(0, 0, 0, .6);
-  }
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
